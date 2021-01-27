@@ -1,0 +1,90 @@
+.weather-card {
+    width: 100%;
+    background-color: #f1f1f1;
+    margin: 0px 0px 15px 0px;
+    padding: 20px;
+    box-sizing: border-box;
+
+    border-style: solid;
+    border-color: #b6b6b6; 
+    border-width: 1px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+.weather-card:hover{
+    animation: weather-card-hover;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.location {
+    display: grid;
+    margin: 0px 0px 5px 0px;
+}
+
+.city-name {
+    display: inline-block;
+    width: fit-content;
+    font-family: "Montserrat", "Roboto", "Helvetica Neue", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #161616;
+}
+
+.country-name {
+    display: inline-block;
+    width: fit-content;
+    align-self: end;
+    font-family: "Roboto", "Helvetica Neue", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:rgba(0, 0, 0, 0.7);
+    margin: 0px;
+}
+
+.card-first-row {
+    display: grid;
+    grid-template-columns: 23% 45% 31%;
+    /* flex-wrap: wrap; */
+    align-items: center;
+}
+
+.weather-icon {
+    margin: 0px 0px 0px 5px;
+    width: 70px;
+}
+
+.temperature-large {
+    font-family: "Roboto", "Helvetica Neue", "Arial", sans-serif;
+    letter-spacing: -2.5px;
+    font-size: 46px;
+    margin: 0px 0px 0px 0px;
+}
+
+.weather-data-item-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (min-width: 500px) {
+    .weather-card {
+        margin: 0px 10px 25px 10px;
+        width: 400px;
+        border-radius: 4px;
+        border-width: 1px;
+    }
+}
+
+@keyframes weather-card-hover {
+    50% {
+        box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.0.5),
+                    0px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    }
+    100% {
+        box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.1),
+                    0px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    }
+}

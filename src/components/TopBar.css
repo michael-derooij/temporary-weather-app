@@ -1,0 +1,11 @@
+.top-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 70px;
+    margin: 0px;
+    padding: 0% 20%;
+    background-color: #424B54;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25);
+}
